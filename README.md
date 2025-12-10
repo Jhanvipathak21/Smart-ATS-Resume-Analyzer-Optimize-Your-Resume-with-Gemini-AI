@@ -36,4 +36,13 @@ This project is a Smart ATS Resume Analyzer that helps job seekers optimize thei
 2. Paste the target job description.  
 3. The system extracts and cleans text from the file.  
 4. Resume and JD are sent to Gemini Pro for semantic analysis.  
-5. The app displays match score, missing keywords, and detailed improvement suggestions, and logs results for analytics.[1]
+5. The app displays match score, missing keywords, and detailed improvement suggestions, and logs results for analytics.
+
+   
+### 🚀 **Future Enhancements**
+- Job portal auto-fetch (Naukri, LinkedIn)
+- Mobile app (Android/iOS)
+- ML-based hiring trend predictions
+- LinkedIn profile optimization
+- Enterprise bulk processing for colleges/HR
+
