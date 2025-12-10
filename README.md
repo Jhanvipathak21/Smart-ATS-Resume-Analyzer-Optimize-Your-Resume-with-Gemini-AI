@@ -1,98 +1,39 @@
-# Smart ATS Resume Analyzer
+## 🤖 Intelligent Resume Optimization using LLM & Gemini Pro
 
-### Problem Statement
+This project is a Smart ATS Resume Analyzer that helps job seekers optimize their resumes for modern Applicant Tracking Systems (ATS) using Large Language Models and Google Gemini Pro. It compares a candidate’s resume with a target job description and provides clear, actionable feedback to increase interview shortlisting chances.[1]
 
-In today's competitive job market, job seekers face challenges ensuring their resumes align with job descriptions, meeting the criteria of Applicant Tracking Systems (ATS). ATS filters often reject resumes that lack specific keywords or don't match job requirements, reducing the chances of securing interviews. This creates a need for a tool to help job seekers optimize their resumes for ATS compliance and highlight areas for improvement.
+### 🌟 Key Features
 
-### Business Use Cases
+- **Resume–JD Match Score**  
+  Calculates a percentage match between the resume and job description using semantic analysis rather than simple keyword matching.[1]
 
-1. Resume Optimization for ATS
+- **Missing Keyword Detection**  
+  Identifies important skills and keywords required in the job description but missing or weak in the resume.[1]
 
-    Assist job seekers in tailoring their resumes to specific job descriptions by identifying missing keywords and providing actionable feedback.
+- **AI-Powered Feedback**  
+  Uses a Gemini-based LLM to generate easy-to-understand suggestions to improve summary, skills, and experience sections.[1]
 
-2. Personalized Resume Improvement
+- **Multi-format Resume Support**  
+  Supports both PDF and DOCX file uploads for practical, real-world usage.[1]
 
-    Deliver detailed analysis and suggestions for enhancing resume content, improving the likelihood of securing interviews.
+- **Analytics Dashboard**  
+  Stores evaluation results in CSV files and visualizes common skill gaps across multiple resumes for institutes, HR teams, and consultancies.[1]
 
-3. Efficient Resume Evaluation
+- **User-Friendly Web App**  
+  Built with Streamlit to provide a simple interface for uploading resumes, entering job descriptions, and viewing detailed results instantly.[1]
 
-    Streamline the process of evaluating resumes for job applicants, recruiters, or career counselors, ensuring effective job application strategies.
+### 🛠 Tech Stack
 
-4. Enhancing Job Search Success
+- Python 3.10  
+- Google Gemini Pro (Google Generative AI API)  
+- Streamlit for web UI  
+- PyMuPDF & `python-docx` for text extraction  
+- Pandas & CSV for data storage and analytics[1]
 
-    Empower candidates with insights into how their resumes align with job postings, helping them stand out in a crowded job market.
+### 🔁 Workflow
 
-5. Scalable Job Application Support
-
-    Provide a scalable solution for career platforms, educational institutions, or HR consultancies to offer resume analysis as a service.
-
-### Key Features
-
-1. Resume-Job Description Match Analysis
-
-    Calculates a match percentage between the provided resume and job description.
-
-2. Keyword Identification
-
-    Lists critical missing keywords to improve ATS compatibility.
-
-3. Detailed Profile Summary
-
-    Offers a comprehensive analysis of strengths and areas for improvement in the resume.
-
-4. User-Friendly Interface
-
-    A simple and intuitive interface powered by Streamlit, enabling seamless user interaction.
-
-### How It Works
-1. Upload Resume
-    Upload your resume in PDF format.
-
-2. Provide Job Description
-    Paste the job description into the provided text area.
-
-3. Analyze Resume
-    The tool extracts text from the resume, processes it using Generative AI (Google's Gemini model), and provides actionable insights.
-
-4. Review Results
-
-    - Match Score: Displays a percentage match.
-    - Missing Keywords: Lists important keywords missing from the resume.
-    - Profile Summary: Provides detailed suggestions for resume improvement
-
-### Project Setup
-
-1. Clone the Repository
-```bash
-git clone <repository-url>
-cd smart-ats-resume-analyzer
-```
-
-2. Create Virtual Environment
-```bash
-conda create -p env python=3.10 -y
-```
-
-3. Install Dependencies
-```bash
-pip install -r requirements.txt
-```
-
-4. Environment Configuration Create a .env file in the root directory:
-```bash
-GOOGLE_API_KEY =your_api_key_here
-```
-
-5. Run the Application
-```bash
-streamlit run app.py
-```
-
-
-### Future Enhancements
-
-    - Multi-Format Resume Support: Extend support to other formats like Word (.docx).
-    - Customizable Feedback: Allow users to specify job sectors for tailored suggestions.
-    - Multilingual Support: Enable resume analysis in multiple languages.
-    - Integration with Job Portals: Directly fetch job descriptions from popular job boards.
-    - Analytics Dashboard: Provide aggregate insights into common gaps in resumes.
+1. Upload a resume (PDF/DOCX).  
+2. Paste the target job description.  
+3. The system extracts and cleans text from the file.  
+4. Resume and JD are sent to Gemini Pro for semantic analysis.  
+5. The app displays match score, missing keywords, and detailed improvement suggestions, and logs results for analytics.[1]
